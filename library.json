@@ -1,0 +1,8 @@
+{
+    "name" : "IconMenu",
+    "version" : "0.0.1",
+    "description" : "A component that is providing a menu for a little screen with icons that can be controlled via a rotary.",
+    "dependencies" : {
+        "ModFirmwareBase" : "https://github.com/chof747/modfirmware-tftdisplay.git"
+    }
+}
