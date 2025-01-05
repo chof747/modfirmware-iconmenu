@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <memory>
+#include "logengine.h"
 
 namespace ModFirmWare
 {
@@ -25,11 +26,15 @@ namespace ModFirmWare
   protected:
     // Method to generate the inverted bitmap (lazy initialization)
     void generateInvertedBitmap();
+    bool validateBitmapSize(size_t bitmap_size) const;
+
+    LogEngine* logger;
 
   private:
     uint16_t width_;
     uint16_t height_;
     std::unique_ptr<uint8_t[]> inverted_bitmap;
+
   };
 
 } // namespace ModFirmWare
